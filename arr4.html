@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <label>numbers</label>
+    <input type="text" id="num"><br><br>
+    <button onclick="raju()">click</button>
+    <span id="check1"></span>
+    <script>
+        function raju(){
+         let a = document.getElementById("num").value;
+          let s = "APOLIUMS raju";
+          let c;
+          for(a = 0; a <=s.length; a++)
+          {
+            c = s[a];
+            if(c =="a" || c =="e" || c =="i" || c =="o"  || c =="u" || c =="A" || c =="E" || c =="I" || c =="O" || c =="U") 
+            {
+                console.log(c);
+            
+            }
+          }
+
+        }
+        </script>
+     </body>
+     </html>

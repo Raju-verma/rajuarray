@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <label>numbers</label>
+    <input type="text" id="num"><br><br>
+    <button onclick="raju()">click</button>
+    <span id="check1"></span>
+    <script>
+        function raju(){
+          let a = document.getElementById("num").value;
+
+          let s =[1,2,3,4,5,2,3,6,7,8,9];
+          let c;
+         
+          for(a = 0; a <=s.length; a++)
+          {
+            c = s[a];
+            if(c =="4" || c =="5" || c =="6" || c =="7"  || c =="u" || c =="8" || c =="9" ) 
+            {
+                console.log(c);
+        //   let result1 =array[2];
+        //   console.log(result1);
+            }
+         
+        }}
+        </script>
+</body>
+</html>

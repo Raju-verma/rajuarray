@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <label>numbers</label>
+    <input type="text" id="num"><br><br>
+    <button onclick="raju(obj)">click</button>
+    <span id="check1"></span>
+    <script>
+        let obj = [
+            {
+                movie: 'tiger zinda hai',
+                year: 2005,
+                actor: ['salman khan', 'paresh rawal', 'kumud mishra'],
+                director: 'aditya chopra'
+            },
+            {
+                movie: 'vivah',
+                year: 2008,
+                actor: ['sahid kapoor', 'mohnish behal', 'alok nath' ],
+                director: 'suraj badjatya'
+            },
+            {
+                movie: 'jailor',
+                year: 2023,
+                actor: ['rajnikanth', 'shiva rajkumar', 'vinayakan' ],
+                director: 'nelson dilip kumar'
+            },
+            {
+                movie: 'animal',
+                year: 2022,
+                actor: ['ranbir kapoor', 'bobby devol', 'anil kapoor' ],
+                director: 'aditya chopra'
+            },
+            {
+                movie: 'pushpa',
+                year: 2020,
+                actor: ['allu arjun', 'fahad fasil', 'sunil',raju],
+                director: 'sukumar'
+            },
+            {
+                movie: 'badlapur',
+                year: 2005,
+                actor: ['varun dhawan', 'nawazudin', 'vijay'],
+                director: 'aditya chopra'
+            }
+        ];
+        function raju() {
+            let a = document.getElementById("num").value;
+            for (let i = 0; i < obj.length; i++) {
+               if (obj[i].movie==a) {
+                console.log(obj[i]);
+               }
+               for (let j = 0; j < obj.length; j++) {
+               if (obj[i].actor[j]==a) {
+                console.log(obj[i]);
+               }
+             }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

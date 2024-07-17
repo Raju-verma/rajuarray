@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <label>numbers</label>
+    <input type="text" id="num"><br><br>
+    <button onclick="raju()">click</button>
+    <span id="check1"></span>
+    <script>
+        function raju(){
+          let a = document.getElementById("num").value;
+          let array = [1,2,3,11,12,13,3,2,11];
+        
+          
+          let i, j;
+          for(i = 0; i <array.length; i++){
+        
+            for(j = 0; j <i; j++){
+                if(array[i]==array[j]){
+                    
+                     console.log(array[i]);
+                }
+                
+            }
+                 }
+                }
+    
+      </script>
+    </body>
+   </html>
+

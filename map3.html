@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Map Method</title>
+</head>
+<body>
+    <label>enter value</label>
+    <input type="text" id="enter"><br><br>
+    <button onclick="pass()">click</button>
+    <span id="raju"></span>
+    <script>
+        
+            // let a =document.getElementById("enter").value;
+            // let arr=[
+            //       {fname:"raju",lname:"verma",age:27},
+            //         {fname:"ravi",lname:"barde",age:28},
+            //         {fname:"chitrank",lname:"dixit",age:25},
+            //         {fname:"arpit",lname:"shukla",age:29}, ]
+            //         // let output=arr.map(val=>val.fname +"  "+val.lname+"   "+val.age);
+            //      let output =arr.filter(val=>val.age>25).map(val=>val.fname+" " + val.lname);
+            //         console.log(output);
+            //   let array =[175,10,30];
+            //   document.getElementById("raju").innerHTML=array.reduce(pass);
+            //    function pass(total,num){
+            //     return total + num;
+            //    }
+            let num=[22,25,16,19,30,40,45,38];
+            document.getElementById("raju").innerHTML=num.filter(pass);
+            function pass(num){
+                // if(array>20){
+                // return array;
+                // }
+                if(num % 2 ==0){
+                    return num;
+                }
+               
+            }
+    </script>
+
+</body>
+</html>
